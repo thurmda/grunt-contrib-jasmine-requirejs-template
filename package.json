@@ -1,0 +1,9 @@
+{
+  "name": "grunt-thurmda-jasmine-template",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/template.js",
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
