@@ -1,9 +1,21 @@
 {
-  "name": "grunt-thurmda-jasmine-template",
-  "version": "0.0.1",
-  "description": "",
-  "main": "src/template.js",
-  "repository": "",
-  "author": "thurmda",
-  "license": "BSD"
+  "name": "grunt-contrib-jasmine-requirejs-template",
+      "version": "0.0.1",
+      "description": "",
+      "main": "src/template.js",
+      "repository": "",
+      "license": "BSD",
+      "author": {
+              "name": "Dan Thurman",
+              "email": "thurmda@danielthurman.com"
+      },
+      "repository": {
+          "type": "git",
+          "url":
+              "git://github.com/thurmda/grunt-contrib-jasmine-requirejs-template.git"
+      },
+      "bugs": {
+          "url":
+              "https://github.com/thurmda/grunt-contrib-jasmine-requirejs-template/issues"
+      }
 }
