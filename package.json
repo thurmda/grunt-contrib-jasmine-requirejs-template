@@ -1,21 +1,30 @@
 {
   "name": "grunt-contrib-jasmine-requirejs-template",
-      "version": "0.0.1",
-      "description": "",
-      "main": "src/template.js",
-      "repository": "",
-      "license": "BSD",
-      "author": {
-              "name": "Dan Thurman",
-              "email": "thurmda@danielthurman.com"
-      },
-      "repository": {
-          "type": "git",
-          "url":
-              "git://github.com/thurmda/grunt-contrib-jasmine-requirejs-template.git"
-      },
-      "bugs": {
-          "url":
-              "https://github.com/thurmda/grunt-contrib-jasmine-requirejs-template/issues"
-      }
+  "version": "0.0.1",
+  "description": "This is a template for the grunt task `grunt-contrib-jasmine`",
+  "main": "src/template.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thurmda/grunt-contrib-jasmine-requirejs-template.git"
+  },
+  "license": "BSD",
+  "author": {
+    "name": "Dan Thurman",
+    "email": "thurmda@danielthurman.com"
+  },
+  "bugs": {
+    "url": "https://github.com/thurmda/grunt-contrib-jasmine-requirejs-template/issues"
+  },
+  "readme": "This is a template for the grunt task `grunt-contrib-jasmine`\n",
+  "readmeFilename": "README.md",
+  "_id": "grunt-contrib-jasmine-requirejs-template@0.0.1",
+  "_from": "grunt-contrib-jasmine-requirejs-template",
+  "dependencies": {
+    "istanbul": "~0.1.30"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0",
+    "grunt-contrib-jasmine": ">=0.3.1"
+  }
+
 }

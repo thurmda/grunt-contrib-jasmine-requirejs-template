@@ -13,20 +13,25 @@
   <script src=".grunt/grunt-contrib-jasmine/jasmine.js"></script>
   
   <script src=".grunt/grunt-contrib-jasmine/jasmine-html.js"></script>
+  <script src=".grunt/grunt-contrib-jasmine/reporter.js"></script>
+  <script src=".grunt/grunt-contrib-jasmine/coverage-reporter.js"></script>
+  <script src=".grunt/grunt-contrib-jasmine/jasmine-helper.js"></script>
+ 
+
+
+</head>
+<body>
+</body>
 
 <% _.each(scripts.helpers, function(helper){ %>
     <script src="<%= helper %>"></script>
 <% }); %>
   <script>
     require(<%= JSON.stringify(scripts.specs) %>, function(){
+
+		//phantom.sendMessage('jasmine.what', jasmine.getEnv().reporter);
         jasmine.getEnv().execute();
     });
   </script>
-  <script src=".grunt/grunt-contrib-jasmine/reporter.js"></script>
-  <script src=".grunt/grunt-contrib-jasmine/jasmine-helper.js"></script>
-  
-
-</head>
-<body>
-</body>
+ 
 </html>
