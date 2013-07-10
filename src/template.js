@@ -4,18 +4,19 @@ var grunt = require('grunt');
 
 var instrument = function (sources, tmp) {
     ///TODO fix me
-    var jsregex = /^webroot\/js\/.*\.js$/; // /\.js$/;
+   //var jsregex = new RegExp('',''); // /\.js$/;
     var instrumenter= new istanbul.Instrumenter();
     var instrumentedSources = [];
     sources.forEach(function (source) {
+        source = source.substr(3);
         var tmpSource = path.join(tmp, source);
-        if ( jsregex.test(source) ){
+        //if ( jsregex.test(source) ){
             grunt.file.write(tmpSource, instrumenter.instrumentSync(
                 grunt.file.read(source), source));
             instrumentedSources.push(tmpSource);
-        }else{
-         grunt.file.write(tmpSource, grunt.file.read(source));
-        }
+        //}else{
+         //grunt.file.write(tmpSource, grunt.file.read(source));
+        //}
     });
     return instrumentedSources;
 };
@@ -65,6 +66,9 @@ var checkThresholds = function (collector, options) {
 };
 
 exports.process = function (grunt, task, context) {
+    //console.dir(grunt);
+    //console.dir(task);
+    //console.dir(context);
     var instrumentedSources = instrument(context.scripts.src, context.temp);
     task.phantomjs.on('jasmine.message', function (message) {
         console.log('phantom said ', message);

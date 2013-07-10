@@ -1,6 +1,6 @@
 {
   "name": "grunt-contrib-jasmine-requirejs-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a template for the grunt task `grunt-contrib-jasmine`",
   "main": "src/template.js",
   "repository": {
@@ -17,14 +17,11 @@
   },
   "readme": "This is a template for the grunt task `grunt-contrib-jasmine`\n",
   "readmeFilename": "README.md",
-  "_id": "grunt-contrib-jasmine-requirejs-template@0.0.1",
-  "_from": "grunt-contrib-jasmine-requirejs-template",
   "dependencies": {
     "istanbul": "~0.1.30"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0",
     "grunt-contrib-jasmine": ">=0.3.1"
-  }
-
+  },
 }
