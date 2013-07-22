@@ -68,7 +68,7 @@ var checkThresholds = function (collector, options) {
 exports.process = function (grunt, task, context) {
     //console.dir(grunt);
     //console.dir(task);
-    //console.dir(context);
+    console.dir(context);
     var instrumentedSources = instrument(context.scripts.src, context.temp);
     task.phantomjs.on('jasmine.message', function (message) {
         console.log('phantom said ', message);
